@@ -4,7 +4,7 @@
     version="0.0.1">
     
     <name>Airplane</name>
-    <description>A Cordova plugin that toggles airplane mode</description>
+    <description>A Cordova plugin that displays an airplane popup dialog</description>
     
     <engines>
         <engine name="cordova" version=">=3.6.0" />
@@ -23,3 +23,6 @@
         </config-file>
         <source-file src="src/android/Airplane.java" target-dir="src/com/acme/plugin/airplane" />
     </platform>
+    
+    
+</plugin>

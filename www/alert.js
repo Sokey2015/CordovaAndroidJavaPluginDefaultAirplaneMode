@@ -1,9 +1,8 @@
 module.exports = {
-  alert: function(title, message, buttonLabel, successCallback) {
+  airplane: function(successCallback) {
     cordova.exec(successCallback,
                  null, // No failure callback
-                 "Alert",
-                 "alert",
-                 [title, message, buttonLabel]);
+                 "Airplane",
+                 "airplane");
   }
 };
