@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 module.exports = {
   alert: function(title, message, buttonLabel, successCallback) {
     cordova.exec(successCallback,
