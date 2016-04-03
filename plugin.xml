@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.acme.plugin.airplane"
+    id="com.acme.plugin.silence"
     version="0.0.1">
     
-    <name>Airplane</name>
-    <description>A Cordova plugin that displays an airplane popup dialog</description>
+    <name>Silence</name>
+    <description>A Cordova plugin that toggles various Android settings</description>
     
     <engines>
         <engine name="cordova" version=">=3.6.0" />
     </engines>
     
-    <js-module src="www/airplane.js" name="Airplane">
-        <clobbers target="Airplane" />
+    <js-module src="www/silence.js" name="Silence">
+        <clobbers target="Silence" />
     </js-module>
     
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Airplane">
-                <param name="android-package" value="com.acme.plugin.airplane.Airplane" />
+            <feature name="Silence">
+                <param name="android-package" value="com.acme.plugin.silence.Silence" />
             </feature>
         </config-file>
-        <source-file src="src/android/Airplane.java" target-dir="src/com/acme/plugin/airplane" />
+        <source-file src="src/android/Silence.java" target-dir="src/com/acme/plugin/silence" />
     </platform>
     
     
